@@ -1,5 +1,7 @@
 # CHANGELOG
 
+# 8.3.2
+
 # 8.3.1
 
  - Fix infinite recursion error when using `/cast day` from the console

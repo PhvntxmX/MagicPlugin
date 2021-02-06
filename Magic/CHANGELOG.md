@@ -1,5 +1,7 @@
 # CHANGELOG
 
+# 8.3.3
+
 # 8.3.2
 
  - Fix issues with spell upgrades on wands

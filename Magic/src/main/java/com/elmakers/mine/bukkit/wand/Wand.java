@@ -5060,8 +5060,6 @@ public class Wand extends WandProperties implements CostReducer, com.elmakers.mi
 
     @Override
     public void updated() {
-        super.updated();
-
         if (effectContext != null) {
             effectContext.cancelEffects();
             effectContext = null;
@@ -5073,6 +5071,10 @@ public class Wand extends WandProperties implements CostReducer, com.elmakers.mi
             }
         }
         saveState();
+
+        // This will reload properties from the item, so make sure to save state first
+        super.updated();
+
         updateMaxMana(false);
         updateName();
         updateLore();
